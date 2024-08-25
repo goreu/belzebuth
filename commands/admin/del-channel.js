@@ -4,7 +4,7 @@ exports.run = (client, message, args) => {
     if (!message.member.hasPermission("ADMINISTRATOR")) {
         var error = new Discord.RichEmbed()
             .setDescription("❌ Vous ne disposez pas des permissions nécessaires pour supprimer ce channel.")
-            .setColor("#DD2E44")
+            .setColor("#FFFFFF")
         message.channel.send(error)
     }
     if (message.member.hasPermission("ADMINISTRATOR")) {
